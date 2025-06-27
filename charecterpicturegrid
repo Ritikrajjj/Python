@@ -1,0 +1,22 @@
+print('Name:Ritikraj,USN:1AY24AI090,sec:o')
+# Multiline string input (you can change this)
+grid_input = """
+......
+.OO...
+OOOO..
+OOOOO.
+.OOOOO
+OOOOO.
+OOOO..
+.OO...
+......
+"""
+
+# Convert string to a grid (2D list)
+grid = [list(line) for line in grid_input.strip().split('\n')]
+
+# Print rotated grid (column-wise print)
+for col in range(len(grid[0])):  # number of columns
+    for row in range(len(grid)):  # number of rows
+        print(grid[row][col], end='')
+    print()
